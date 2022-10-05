@@ -1,6 +1,6 @@
-function OperatorButton({ handleClick, operator }) {
+function OperatorButton({ handleClick, operator, name }) {
   return (
-    <button className="operator-btn" onClick={() => handleClick(operator)}>
+    <button name={name} onClick={handleClick} className="operator-btn">
       {operator}
     </button>
   );

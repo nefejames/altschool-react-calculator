@@ -1,6 +1,6 @@
-function NumberButton({ handleClick, number }) {
+function NumberButton({ handleClick, number, name }) {
   return (
-    <button className="number-btn" onClick={() => handleClick(number)}>
+    <button name={name} onClick={handleClick} className="number-btn">
       {number}
     </button>
   );
